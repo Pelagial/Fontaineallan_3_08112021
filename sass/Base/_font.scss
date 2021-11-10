@@ -1,3 +1,4 @@
+@import "../Utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
 h1{
@@ -17,19 +18,39 @@ p{
 ul{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    color: white;
 }
 input{
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #353535;
 }
 .titles{
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
     font-size: 1.5rem;
 }
-.restaurants_card--new_headband{
+.presentation_button p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    color: white;
+}
+.new_headband{
     p{
         font-family: 'Roboto', sans-serif;
         font-weight: 450;
         font-size: .8rem;
+        color: $new-headband-text-color;
     }
+}
+.functionning_card--text{
+    font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+}
+.functionning_card > ::before{
+    font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+        font-size: .8rem;
 }

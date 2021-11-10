@@ -1,18 +1,18 @@
                                         /*general_settings*/
-@import "../Base/reset";
-@import "../Utils/variables";                            
-@import "../Base/font";
-
 *svg{
     height: 300px;
     width: 300px;
 }
 .loading{
-    position: relative;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
+                                        /*mixin*/
 @mixin anim-loading($anim-name) {
     animation: $anim-name 3s ease both;
 }
@@ -58,12 +58,12 @@
 
     &--bell{
         position: relative;
-        top: 80px;
+        top: 60px;
         @include anim-loading(bell-anim);
     }
     &--tray{
         position: relative;
-        bottom: 150px;
+        bottom: 125px;
         @include anim-loading(tray-anim);
     }
 }

@@ -1,0 +1,75 @@
+                                        /*import_general*/
+@import "../Base/reset";
+@import "../Base/font";
+@import "../Utils/variables";           
+
+                                        /*mixin*/
+@mixin design-card-function {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 70px;
+    border-radius: 15px;   
+    margin: 10px 0 10px 0;
+    background: $background-color;
+    box-shadow: $shadow-color 0 5px 10px;
+}
+@mixin number-circle($value) {
+    content: $value;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -12px;
+    background-color: $color-primary;
+    color: white;
+}
+@mixin hover-card-function {
+    background-color: $hover-color;
+    transition: .2s ease-in;
+    & i{
+        color: $color-primary;
+    }
+}
+
+                                        /*main_design*/
+.functionning_card{
+    display: flex;
+    align-items: flex-end;
+    &--1{
+        @include design-card-function;
+        &::before{
+            @include number-circle("1");
+        }
+        &:hover{
+            @include hover-card-function;
+        }
+    }
+    &--2{
+        @include design-card-function;
+        &::before{
+            @include number-circle("2");
+        }
+        &:hover{
+            @include hover-card-function;
+        }
+    }
+    &--3{
+        @include design-card-function;
+        &::before{
+            @include number-circle("3");
+        }
+        &:hover{
+            @include hover-card-function;
+        }
+    }
+    &--icon{
+        font-size: 1.2rem;
+        color: $icon-color;
+        margin-right: 30px;
+    }    
+}
