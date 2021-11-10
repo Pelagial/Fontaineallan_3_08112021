@@ -1,0 +1,22 @@
+.footer{
+    height: 180px;
+    width: 100%;
+    background: #353535;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    h1{
+        font-size: 1.2rem;
+    }
+}
+.footer_text{
+    margin: 10px 0;
+   li{
+       margin: 5px;
+   }
+   i{
+       font-size: .8rem;
+       margin-right: 5px;
+   } 
+}
