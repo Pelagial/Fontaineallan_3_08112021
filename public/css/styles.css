@@ -481,28 +481,6 @@ svg {
   display: none;
 }
 
-.footer {
-  height: 180px;
-  width: 100%;
-  background: #353535;
-  padding: 20px;
-}
-.footer h1 {
-  font-size: 1.2rem;
-  color: white;
-}
-
-.footer_text {
-  margin: 10px 0;
-}
-.footer_text li {
-  margin: 5px;
-}
-.footer_text i {
-  font-size: 0.8rem;
-  margin-right: 5px;
-}
-
 /*import_general*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -1003,6 +981,28 @@ input {
 .heart-icon {
   position: relative;
   left: 5%;
+}
+
+.footer {
+  height: 180px;
+  width: 100%;
+  background: #353535;
+  padding: 20px;
+}
+.footer h1 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer_text {
+  margin: 10px 0;
+}
+.footer_text li {
+  margin: 5px;
+}
+.footer_text i {
+  font-size: 0.8rem;
+  margin-right: 5px;
 }
 
 /*main_design*/
