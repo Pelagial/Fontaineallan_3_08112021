@@ -48,3 +48,26 @@ input{
         font-weight: 450;
         font-size: .8rem;
 }
+
+                                        /*restaurant_page_font*/
+
+.restaurant_titles{
+    & h1{
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+        font-size: 1.7rem;
+    }
+}
+.restaurant_menu{
+    & h2{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: 350;
+    }
+    .food-card{
+    &--price, &--meal_name{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    }
+}

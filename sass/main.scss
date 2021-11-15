@@ -2,6 +2,7 @@
 @import "../sass/Base/reset";
 @import "../sass/Base/font";
 @import "../sass/Utils/variables";
+@import "../sass/Utils/mixins";
                                         /*import_animation*/
 @import "../sass/Layout/loading-anim";
 @import "../sass/Composants/heart-anim";
@@ -11,18 +12,8 @@
 @import "../sass/Composants/card-restaurants";
 @import "../sass/Composants/button";
 @import "../sass/Layout/footer";
+@import "../sass/Layout/restaurants-page";
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
                                         /*main_design*/
 .page_contents{
@@ -39,6 +30,7 @@
         height: 45px;
         width: 100%;
         background: #eaeaea;
+        box-shadow: 0 2px 2px inset lightgrey;
         @include flex-center;
         margin: 0;
     }
@@ -69,7 +61,9 @@
             margin-bottom: 10%;
         }
     }
-    @include button;
+    &_button{
+        @include button;
+    }
 }
 
                     /*functionning_part*/
