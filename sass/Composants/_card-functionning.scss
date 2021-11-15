@@ -40,6 +40,7 @@
 .functionning_card{
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
     &--1{
         @include design-card-function;
         &::before{

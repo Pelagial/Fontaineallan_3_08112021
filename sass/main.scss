@@ -9,6 +9,7 @@
 @import "../sass/Layout/header";
 @import "../sass/Composants/card-functionning";
 @import "../sass/Composants/card-restaurants";
+@import "../sass/Composants/button";
 @import "../sass/Layout/footer";
 
 @mixin flex-center {
@@ -29,7 +30,7 @@
     min-height:100%;
     margin: 0;
     position:relative;
-    z-index: -1;   
+   
 }
 
                     /*search_formular*/
@@ -68,17 +69,7 @@
             margin-bottom: 10%;
         }
     }
-    &_button{
-        background-image: linear-gradient(#FF79DA, #9356DC);
-        box-shadow: #a5a5a5 0 5px 10px;
-        border-radius: 25px;
-        padding: 15px;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        width: 60%;
-        max-width: 300px;
-    }
+    @include button;
 }
 
                     /*functionning_part*/
@@ -91,7 +82,7 @@
 }
 
                     /*restaurant_part*/
-.restaurants{
+#restaurants{
     width: 100%;
     padding: 13% 5% 13% 5%;
     display: flex;

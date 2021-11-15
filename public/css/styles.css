@@ -132,13 +132,6 @@ input {
   font-size: 1.5rem;
 }
 
-.presentation_button p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: white;
-}
-
 .new_headband p {
   font-family: "Roboto", sans-serif;
   font-weight: 450;
@@ -167,11 +160,14 @@ input {
 .loading {
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
+  animation: loading-position 0.1s ease-out;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
 }
 
 /*mixin*/
@@ -313,16 +309,13 @@ input {
   opacity: 0.9;
 }
 
-/*background_settings*/
-.img-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
 /*loading_anim_settings*/
+@keyframes loading-position {
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
 @keyframes anim-disapear {
   0% {
     opacity: 1;
@@ -611,13 +604,6 @@ input {
   font-size: 1.5rem;
 }
 
-.presentation_button p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: white;
-}
-
 .new_headband p {
   font-family: "Roboto", sans-serif;
   font-weight: 450;
@@ -641,6 +627,7 @@ input {
 .functionning_card {
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 }
 .functionning_card--1 {
   display: flex;
@@ -871,13 +858,6 @@ input {
   font-size: 1.5rem;
 }
 
-.presentation_button p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: white;
-}
-
 .new_headband p {
   font-family: "Roboto", sans-serif;
   font-weight: 450;
@@ -908,6 +888,10 @@ input {
   margin-bottom: 15px;
   position: relative;
 }
+.restaurants_card--01:hover {
+  transform: scale(1.01);
+  transition: transform 1s reverse;
+}
 
 .restaurants_card--02 {
   height: 270px;
@@ -919,6 +903,10 @@ input {
   margin-top: 5%;
   margin-bottom: 15px;
   position: relative;
+}
+.restaurants_card--02:hover {
+  transform: scale(1.01);
+  transition: transform 1s reverse;
 }
 
 .restaurants_card--03 {
@@ -932,6 +920,10 @@ input {
   margin-bottom: 15px;
   position: relative;
 }
+.restaurants_card--03:hover {
+  transform: scale(1.01);
+  transition: transform 1s reverse;
+}
 
 .restaurants_card--04 {
   height: 270px;
@@ -943,6 +935,10 @@ input {
   margin-top: 5%;
   margin-bottom: 15px;
   position: relative;
+}
+.restaurants_card--04:hover {
+  transform: scale(1.01);
+  transition: transform 1s reverse;
 }
 
 .new_headband {
@@ -1011,7 +1007,6 @@ input {
   min-height: 100%;
   margin: 0;
   position: relative;
-  z-index: -1;
 }
 
 /*search_formular*/
@@ -1062,8 +1057,18 @@ input {
   font-size: 18px;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 65%;
   max-width: 300px;
+}
+.presentation_button p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: white;
+}
+.presentation_button:hover {
+  transform: scale(1.01);
+  transition: transform 0.1s ease;
 }
 
 /*functionning_part*/
@@ -1079,7 +1084,7 @@ input {
 }
 
 /*restaurant_part*/
-.restaurants {
+#restaurants {
   width: 100%;
   padding: 13% 5% 13% 5%;
   display: flex;

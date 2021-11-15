@@ -19,15 +19,31 @@
 
 .restaurants_card--01{
     @include restaurant_card_mix;
+    &:hover{
+        transform: scale(1.01);
+        transition: transform 1s reverse;
+    }
 }
 .restaurants_card--02{
     @include restaurant_card_mix;
+    &:hover{
+        transform: scale(1.01);
+        transition: transform 1s reverse;
+    }
 }
 .restaurants_card--03{
     @include restaurant_card_mix;
+    &:hover{
+        transform: scale(1.01);
+        transition: transform 1s reverse;
+    }
 }
 .restaurants_card--04{
     @include restaurant_card_mix;
+    &:hover{
+        transform: scale(1.01);
+        transition: transform 1s reverse;
+    }
 }
 
 .new_headband{
