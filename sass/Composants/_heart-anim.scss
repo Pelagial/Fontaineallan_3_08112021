@@ -18,7 +18,7 @@ svg {
 $anim-settings: opacity 1s ease-in-out;      
 
 .heart-stroke{
-    fill: transparent;
+    fill: $background-color;
     stroke:black;
     stroke-width: 20px;
     opacity: 1;

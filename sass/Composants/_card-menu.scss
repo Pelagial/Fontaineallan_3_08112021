@@ -57,10 +57,10 @@
 .food-card:hover {
     & > .food-card-validation{
         @include flex-center;
-        animation: box-slide .5s ease-in-out;
-        transform-origin: right;        
+        animation: slide .5s ease-in-out backwards;
+        transform-origin: right; 
     }
-    &> .food-card-text{
+    & > .food-card-text{
         padding-right: 50px;
         transition: .5s ease-in-out;
     }
@@ -74,7 +74,7 @@
    }
 }
 
-@keyframes box-slide {
+@keyframes slide {
     0% {
         transform: scaleX(0);
 }

@@ -453,7 +453,7 @@ svg {
 
 /*heart-settings*/
 .heart-stroke {
-  fill: transparent;
+  fill: #f6f6f6;
   stroke: black;
   stroke-width: 20px;
   opacity: 1;
@@ -1047,7 +1047,7 @@ input {
 
 .heart-icon {
   position: relative;
-  right: 8%;
+  right: 5%;
 }
 
 /*responsive_design*/
@@ -1547,7 +1547,7 @@ svg {
 
 /*heart-settings*/
 .heart-stroke {
-  fill: transparent;
+  fill: #f6f6f6;
   stroke: black;
   stroke-width: 20px;
   opacity: 1;
@@ -2109,7 +2109,7 @@ input {
 
 .heart-icon {
   position: relative;
-  right: 8%;
+  right: 5%;
 }
 
 /*responsive_design*/
@@ -2345,7 +2345,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: box-slide 0.5s ease-in-out;
+  animation: slide 0.5s ease-in-out backwards;
   transform-origin: right;
 }
 .food-card:hover > .food-card-text {
@@ -2360,7 +2360,7 @@ input {
   animation: rotate 0.5s both;
 }
 
-@keyframes box-slide {
+@keyframes slide {
   0% {
     transform: scaleX(0);
   }
@@ -2457,6 +2457,10 @@ input {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5%;
+}
+.restaurant_titles .heart-icon {
+  position: relative;
+  right: 0;
 }
 
 .restaurant_menu {
