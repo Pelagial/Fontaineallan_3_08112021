@@ -173,6 +173,7 @@ input {
 
 /*general_mixins*/
 /*mixin_animation*/
+/*mixins_functionning*/
 /*mixins_card_menu*/
 /*import_animation*/
 /*general_settings*/
@@ -456,6 +457,7 @@ svg {
   stroke: black;
   stroke-width: 20px;
   opacity: 1;
+  z-index: 1;
   transition: opacity 1s ease-in-out;
 }
 .heart-stroke:hover {
@@ -470,7 +472,7 @@ svg {
   transition: opacity 1s ease-in-out;
   transition-delay: 0.3s;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 
 /*import_design*/
@@ -493,6 +495,19 @@ svg {
   top: 25%;
 }
 
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .logo_header {
+    width: 20%;
+  }
+}
+/*responsive_desktop*/
+@media only screen and (min-width: 1025px) {
+  .logo_header {
+    width: 15%;
+  }
+}
 /*import_general*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -658,7 +673,10 @@ input {
   font-weight: 700;
 }
 
-/*mixin*/
+/*general_mixins*/
+/*mixin_animation*/
+/*mixins_functionning*/
+/*mixins_card_menu*/
 /*main_design*/
 .functionning_card {
   display: flex;
@@ -1016,7 +1034,7 @@ input {
 }
 
 .card_infos {
-  height: 10vh;
+  height: 25%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1032,6 +1050,19 @@ input {
   right: 8%;
 }
 
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .card_infos {
+    height: 23%;
+  }
+}
+/*responsive_desktop*/
+@media only screen and (min-width: 1024px) {
+  .card_infos {
+    height: 20%;
+  }
+}
 .footer {
   height: 180px;
   width: 100%;
@@ -1055,6 +1086,20 @@ input {
   margin-right: 5px;
 }
 
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .footer {
+    height: 160px;
+    padding: 20px 50px;
+  }
+
+  .footer_text {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 /*import_general*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -1222,6 +1267,7 @@ input {
 
 /*general_mixins*/
 /*mixin_animation*/
+/*mixins_functionning*/
 /*mixins_card_menu*/
 /*import_animation*/
 /*general_settings*/
@@ -1505,6 +1551,7 @@ svg {
   stroke: black;
   stroke-width: 20px;
   opacity: 1;
+  z-index: 1;
   transition: opacity 1s ease-in-out;
 }
 .heart-stroke:hover {
@@ -1519,7 +1566,7 @@ svg {
   transition: opacity 1s ease-in-out;
   transition-delay: 0.3s;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 
 /*import_design*/
@@ -1688,7 +1735,10 @@ input {
   font-weight: 700;
 }
 
-/*mixin*/
+/*general_mixins*/
+/*mixin_animation*/
+/*mixins_functionning*/
+/*mixins_card_menu*/
 /*main_design*/
 .functionning_card {
   display: flex;
@@ -2046,7 +2096,7 @@ input {
 }
 
 .card_infos {
-  height: 10vh;
+  height: 25%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -2062,6 +2112,19 @@ input {
   right: 8%;
 }
 
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .card_infos {
+    height: 23%;
+  }
+}
+/*responsive_desktop*/
+@media only screen and (min-width: 1024px) {
+  .card_infos {
+    height: 20%;
+  }
+}
 /*general_settings*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -2229,6 +2292,7 @@ input {
 
 /*general_mixins*/
 /*mixin_animation*/
+/*mixins_functionning*/
 /*mixins_card_menu*/
 /*food_card_design_settings*/
 .food-card {
@@ -2281,17 +2345,17 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: box-slide 0.5s ease;
+  animation: box-slide 0.5s ease-in-out;
   transform-origin: right;
 }
 .food-card:hover > .food-card-text {
   padding-right: 50px;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .food-card-validation i {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
@@ -2335,6 +2399,20 @@ input {
   margin-right: 5px;
 }
 
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .footer {
+    height: 160px;
+    padding: 20px 50px;
+  }
+
+  .footer_text {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 /*header_design*/
 .back_header {
   font-size: 1.2rem;
@@ -2351,12 +2429,12 @@ input {
 .page_contents {
   max-width: 1280px;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
 }
 
 .restaurant_img {
-  z-index: -1;
+  z-index: -5;
 }
 .restaurant_img img {
   height: 260px;
@@ -2378,11 +2456,15 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
+.restaurant_menu {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .restaurant_menu-starter, .restaurant_menu-dish, .restaurant_menu-dessert {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .menu_type {
@@ -2400,7 +2482,7 @@ input {
 }
 
 .order_button {
-  margin-top: 13%;
+  margin-top: 8%;
   position: relative;
   left: 20%;
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -2424,12 +2506,44 @@ input {
   transition: transform 0.1s ease;
 }
 
-/*header_design*/
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .menu_wrapper {
+    padding: 5%;
+  }
+
+  .restaurant_titles {
+    margin-bottom: 2%;
+  }
+
+  .order_button {
+    margin-top: 0;
+    left: 27%;
+  }
+}
+/*responsive_desktop*/
+@media only screen and (min-width: 1024px) {
+  .card_infos {
+    height: 20%;
+  }
+
+  .restaurant_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+  }
+
+  .order_button {
+    margin-top: 5%;
+    left: 37%;
+  }
+}
 /*main_design*/
 .page_contents {
   max-width: 1280px;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -2515,6 +2629,33 @@ input {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
+}
+
+/*responsive_design*/
+/*responsive_tablet*/
+@media only screen and (min-width: 450px) {
+  .presentation {
+    padding: 10% 5% 10% 5%;
+  }
+
+  /*functionning_part*/
+  .functionning {
+    padding: 0% 5%;
+  }
+  .functionning_card {
+    margin-top: 3%;
+  }
+
+  /*restaurant_part*/
+  #restaurants {
+    padding: 5%;
+  }
+}
+/*responsive_desktop*/
+@media only screen and (min-width: 1024px) {
+  .presentation {
+    padding: 5%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

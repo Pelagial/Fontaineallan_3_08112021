@@ -66,7 +66,7 @@
     border-radius: 15px 15px 0 0;
 }
 .card_infos{
-    height: 10vh;
+    height: 25%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,3 +79,20 @@
     position: relative;
     right: 8%;
 }
+
+
+                                        /*responsive_design*/
+
+                    /*responsive_tablet*/
+@media only screen and (min-width: 450px){
+    .card_infos{
+        height: 23%;
+    }
+} 
+
+                    /*responsive_desktop*/
+@media only screen and (min-width: 1024px){
+    .card_infos{
+        height: 20%;
+    }
+} 

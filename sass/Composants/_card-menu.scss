@@ -57,18 +57,18 @@
 .food-card:hover {
     & > .food-card-validation{
         @include flex-center;
-        animation: box-slide .5s ease;
-        transform-origin: right;
+        animation: box-slide .5s ease-in-out;
+        transform-origin: right;        
     }
     &> .food-card-text{
         padding-right: 50px;
-        transition: .5s ease;
+        transition: .5s ease-in-out;
     }
 }
 .food-card-validation{
     i{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: rotate(180deg);
     animation: rotate .5s both;
    }
@@ -90,6 +90,5 @@
         transform: rotate(360deg);
 }
 }
-
 
 
