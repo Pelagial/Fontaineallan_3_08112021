@@ -65,3 +65,9 @@
 @mixin shadow {
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
 }
+
+                                        /*mixins_menu_appearance*/
+@mixin delay-anim-menu ($value){
+    transform-origin: top;
+    animation: anim-appearance-delay $value+1s ease-in;
+}

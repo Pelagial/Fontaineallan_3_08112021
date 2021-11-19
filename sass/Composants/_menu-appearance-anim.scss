@@ -1,0 +1,36 @@
+                                        /*general_settings*/
+@import "../Utils/mixins";
+
+                                        /*menu_appearance_animation*/
+.restaurant_menu{
+    opacity: 1;
+    transform-origin: top;
+    animation: anim-appearance 1s ease-in;
+    &-starter{
+        @include delay-anim-menu(0s);
+    }
+    &-dish{
+        @include delay-anim-menu(.1s);
+    }
+    &-dessert{
+        @include delay-anim-menu(.5s);
+    }
+}
+@keyframes anim-appearance {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes anim-appearance-delay {
+    20%{
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

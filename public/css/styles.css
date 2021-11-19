@@ -175,6 +175,7 @@ input {
 /*mixin_animation*/
 /*mixins_functionning*/
 /*mixins_card_menu*/
+/*mixins_menu_appearance*/
 /*import_animation*/
 /*general_settings*/
 * svg {
@@ -677,6 +678,7 @@ input {
 /*mixin_animation*/
 /*mixins_functionning*/
 /*mixins_card_menu*/
+/*mixins_menu_appearance*/
 /*main_design*/
 .functionning_card {
   display: flex;
@@ -1269,6 +1271,7 @@ input {
 /*mixin_animation*/
 /*mixins_functionning*/
 /*mixins_card_menu*/
+/*mixins_menu_appearance*/
 /*import_animation*/
 /*general_settings*/
 * svg {
@@ -1570,6 +1573,49 @@ svg {
 }
 
 /*import_design*/
+/*general_settings*/
+/*general_mixins*/
+/*mixin_animation*/
+/*mixins_functionning*/
+/*mixins_card_menu*/
+/*mixins_menu_appearance*/
+/*menu_appearance_animation*/
+.restaurant_menu {
+  opacity: 1;
+  transform-origin: top;
+  animation: anim-appearance 1s ease-in;
+}
+.restaurant_menu-starter {
+  transform-origin: top;
+  animation: anim-appearance-delay 1s ease-in;
+}
+.restaurant_menu-dish {
+  transform-origin: top;
+  animation: anim-appearance-delay 1.1s ease-in;
+}
+.restaurant_menu-dessert {
+  transform-origin: top;
+  animation: anim-appearance-delay 1.5s ease-in;
+}
+
+@keyframes anim-appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim-appearance-delay {
+  20% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 /*import_general*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
@@ -1739,6 +1785,7 @@ input {
 /*mixin_animation*/
 /*mixins_functionning*/
 /*mixins_card_menu*/
+/*mixins_menu_appearance*/
 /*main_design*/
 .functionning_card {
   display: flex;
@@ -2294,6 +2341,7 @@ input {
 /*mixin_animation*/
 /*mixins_functionning*/
 /*mixins_card_menu*/
+/*mixins_menu_appearance*/
 /*food_card_design_settings*/
 .food-card {
   width: 100%;
