@@ -21,28 +21,28 @@
     @include restaurant_card_mix;
     &:hover{
         transform: scale(1.01);
-        transition: transform 1s reverse;
+        transition: transform .2s ease;
     }
 }
 .restaurants_card--02{
     @include restaurant_card_mix;
     &:hover{
         transform: scale(1.01);
-        transition: transform 1s reverse;
+        transition: transform .2s ease;
     }
 }
 .restaurants_card--03{
     @include restaurant_card_mix;
     &:hover{
         transform: scale(1.01);
-        transition: transform 1s reverse;
+        transition: transform .2s ease;
     }
 }
 .restaurants_card--04{
     @include restaurant_card_mix;
     &:hover{
         transform: scale(1.01);
-        transition: transform 1s reverse;
+        transition: transform .2s ease;
     }
 }
 

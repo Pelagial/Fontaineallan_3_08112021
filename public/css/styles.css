@@ -961,7 +961,7 @@ input {
 }
 .restaurants_card--01:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--02 {
@@ -977,7 +977,7 @@ input {
 }
 .restaurants_card--02:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--03 {
@@ -993,7 +993,7 @@ input {
 }
 .restaurants_card--03:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--04 {
@@ -1009,7 +1009,7 @@ input {
 }
 .restaurants_card--04:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .new_headband {
@@ -2023,7 +2023,7 @@ input {
 }
 .restaurants_card--01:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--02 {
@@ -2039,7 +2039,7 @@ input {
 }
 .restaurants_card--02:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--03 {
@@ -2055,7 +2055,7 @@ input {
 }
 .restaurants_card--03:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .restaurants_card--04 {
@@ -2071,7 +2071,7 @@ input {
 }
 .restaurants_card--04:hover {
   transform: scale(1.01);
-  transition: transform 1s reverse;
+  transition: transform 0.2s ease;
 }
 
 .new_headband {
@@ -2345,7 +2345,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slide 0.5s ease-in-out backwards;
+  animation: slide 0.5s ease-in-out;
   transform-origin: right;
 }
 .food-card:hover > .food-card-text {
@@ -2365,7 +2365,7 @@ input {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(1);
   }
 }
 @keyframes rotate {

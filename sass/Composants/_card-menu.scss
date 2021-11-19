@@ -57,7 +57,7 @@
 .food-card:hover {
     & > .food-card-validation{
         @include flex-center;
-        animation: slide .5s ease-in-out backwards;
+        animation: slide .5s ease-in-out;
         transform-origin: right; 
     }
     & > .food-card-text{
@@ -79,7 +79,7 @@
         transform: scaleX(0);
 }
     100% {
-        transform: scaleX(-50px);
+        transform: scaleX(1);
 }
 }
 @keyframes rotate {
