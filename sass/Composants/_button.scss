@@ -1,3 +1,4 @@
+@import "../Utils/variables";
 
 @mixin button {
         background-image: linear-gradient(#FF79DA, #9356DC);
@@ -17,7 +18,11 @@
         }
         &:hover{
             transform: scale(1.01);
-            transition: transform 0.1s ease;
+            transition: transform 0.1s ease; 
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $gradient-color;
+            & p{
+                color: $color-primary;
+            }
         }
 }
 

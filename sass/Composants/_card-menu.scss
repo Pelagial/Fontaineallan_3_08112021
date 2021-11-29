@@ -20,6 +20,7 @@
     align-items: center;
     margin: 5% 0;
     &--price{
+        padding-top: 20px;
         padding-right: 20px;
         padding-left: 7px;
     }
@@ -70,7 +71,7 @@
     color: white;
     font-size: 1.5rem;
     transform: rotate(180deg);
-    animation: rotate .5s both;
+    animation: rotate .45s ease-in both;
    }
 }
 
